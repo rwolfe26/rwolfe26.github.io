@@ -906,7 +906,43 @@
           <div class="exp-desc">Engineered a 4-stage ETL pipeline in n8n that ingests ~333 articles/week across 12 RSS feeds, routes content through an LLM relevance filter, and scrapes approved sources — reducing manual research overhead to near-zero.</div>
           <div class="exp-desc">Built agentic logic that uses AI to score and rank articles by priority, cutting unnecessary Firecrawl and OpenAI costs by filtering low-signal content early. Integrated Firecrawl and OpenAI APIs for structured full-text extraction from industry web sources, producing clean content summaries ready for marketing use.</div>
           <div class="exp-desc">Replaced a fully manual content workflow — research, writing, image generation, and publishing — with an end-to-end automated pipeline, freeing the team entirely from recurring content production.</div>
-          <div class="tags">
+          <div style="margin:0.75rem 0;">
+          <svg viewBox="0 0 580 110" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
+            <defs>
+              <pattern id="bgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
+              </pattern>
+              <marker id="barr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L6,3 z" fill="#3b82f6"/>
+              </marker>
+            </defs>
+            <rect width="580" height="110" fill="url(#bgrid)"/>
+            <rect x="12" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#3b82f6" stroke-width="1.5"/>
+            <text x="66" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="600">12 RSS FEEDS</text>
+            <text x="66" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">~333 articles/week</text>
+            <text x="66" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">harvested</text>
+            <line x1="120" y1="55" x2="148" y2="55" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#barr)"/>
+            <rect x="150" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#22c55e" stroke-width="1.5"/>
+            <text x="204" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#22c55e" text-anchor="middle" font-weight="600">LLM FILTER</text>
+            <text x="204" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">GPT-4.1-mini</text>
+            <text x="204" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">scores relevance</text>
+            <line x1="258" y1="55" x2="286" y2="55" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#barr)"/>
+            <rect x="288" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="342" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#f59e0b" text-anchor="middle" font-weight="600">SCRAPE + WRITE</text>
+            <text x="342" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">Firecrawl + OpenAI</text>
+            <text x="342" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">full extraction</text>
+            <line x1="396" y1="55" x2="424" y2="55" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#barr)"/>
+            <rect x="426" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#a855f7" stroke-width="1.5"/>
+            <text x="480" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#a855f7" text-anchor="middle" font-weight="600">AUTO-PUBLISH</text>
+            <text x="480" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">LinkedIn post +</text>
+            <text x="480" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">image generated</text>
+            <text x="290" y="100" font-family="JetBrains Mono,monospace" font-size="8" fill="#1e3a5f" text-anchor="middle">BUTTER LANE — 2x weekly · 15hrs eliminated · 0 human touchpoints</text>
+            <circle r="3" fill="#3b82f6" opacity="0.9">
+              <animateMotion dur="3s" repeatCount="indefinite" path="M120,55 L424,55"/>
+              <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+          </div>          <div class="tags">
             <span class="tag">n8n</span><span class="tag">ETL Pipelines</span><span class="tag">GPT-4.1-mini</span>
             <span class="tag">Firecrawl</span><span class="tag">OpenAI API</span><span class="tag">Agentic Logic</span>
           </div>
@@ -965,7 +1001,50 @@
       </div>
 
       <div class="project-card" style="border-top: 3px solid var(--accent);">
-        <div class="project-top">
+        <div class="project-visual" style="margin-bottom:1rem;">
+          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
+            <defs>
+              <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
+              </pattern>
+            </defs>
+            <rect width="580" height="120" fill="url(#grid2)"/>
+
+            <!-- Title -->
+            <text x="16" y="22" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b" font-weight="600">MODEL ACCURACY COMPARISON</text>
+
+            <!-- Baseline reference line -->
+            <line x1="16" y1="90" x2="564" y2="90" stroke="#1e2d45" stroke-width="1" stroke-dasharray="4,4"/>
+            <text x="16" y="88" font-family="JetBrains Mono,monospace" font-size="7" fill="#475569">66% baseline</text>
+
+            <!-- Bar 1: FFNN -->
+            <rect x="60" y="57" width="80" height="33" rx="2" fill="#3b82f6" opacity="0.85"/>
+            <rect x="60" y="57" width="80" height="2" rx="1" fill="#60a5fa"/>
+            <text x="100" y="52" font-family="JetBrains Mono,monospace" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">67.77%</text>
+            <text x="100" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">FFNN v1</text>
+
+            <!-- Bar 2: Logistic Regression -->
+            <rect x="180" y="55" width="80" height="35" rx="2" fill="#3b82f6" opacity="0.85"/>
+            <rect x="180" y="55" width="80" height="2" rx="1" fill="#60a5fa"/>
+            <text x="220" y="50" font-family="JetBrains Mono,monospace" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">67.98%</text>
+            <text x="220" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">Log. Regression</text>
+
+            <!-- Bar 3: RNN -->
+            <rect x="300" y="44" width="80" height="46" rx="2" fill="#22c55e" opacity="0.85"/>
+            <rect x="300" y="44" width="80" height="2" rx="1" fill="#4ade80"/>
+            <text x="340" y="39" font-family="JetBrains Mono,monospace" font-size="9" fill="#4ade80" text-anchor="middle" font-weight="700">75.57%</text>
+            <text x="340" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">Celtics RNN ★</text>
+
+            <!-- Bar 4: avg per chunk -->
+            <rect x="420" y="35" width="80" height="55" rx="2" fill="#f59e0b" opacity="0.85"/>
+            <rect x="420" y="35" width="80" height="2" rx="1" fill="#fbbf24"/>
+            <text x="460" y="30" font-family="JetBrains Mono,monospace" font-size="9" fill="#fbbf24" text-anchor="middle" font-weight="700">7.0 / 10</text>
+            <text x="460" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">avg correct/chunk</text>
+
+            <!-- Baseline bar overlay -->
+            <rect x="60" y="88" width="440" height="2" rx="1" fill="#475569" opacity="0.5"/>
+          </svg>
+        </div>        <div class="project-top">
           <div class="project-icon">🏀</div>
           <div class="project-links">
             <a href="https://medium.com/@jjhertz/predicting-nba-game-outcomes-bd5efddb6894" target="_blank" rel="noopener noreferrer">
@@ -996,7 +1075,77 @@
       </div>
 
       <div class="project-card" style="border-top: 3px solid #a855f7;">
-        <div class="project-top">
+        <div class="project-visual" style="margin-bottom:1rem;">
+          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
+            <defs>
+              <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
+              </pattern>
+              <radialGradient id="c1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="c2" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="c3" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#22c55e" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="c4" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="c5" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ef4444" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="580" height="120" fill="url(#grid3)"/>
+
+            <!-- Title -->
+            <text x="16" y="18" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b">K-MEANS CLUSTER MAP — 4,600+ STEAM HORROR GAMES</text>
+
+            <!-- Cluster blobs (t-SNE style) -->
+            <ellipse cx="130" cy="65" rx="55" ry="35" fill="url(#c1)" opacity="0.9"/>
+            <ellipse cx="245" cy="50" rx="45" ry="28" fill="url(#c2)" opacity="0.9"/>
+            <ellipse cx="340" cy="75" rx="50" ry="30" fill="url(#c3)" opacity="0.9"/>
+            <ellipse cx="440" cy="55" rx="40" ry="32" fill="url(#c4)" opacity="0.9"/>
+            <ellipse cx="510" cy="80" rx="35" ry="22" fill="url(#c5)" opacity="0.8"/>
+
+            <!-- Scatter dots per cluster -->
+            <g fill="#60a5fa" opacity="0.7">
+              <circle cx="105" cy="58" r="2"/><circle cx="118" cy="72" r="1.5"/><circle cx="142" cy="55" r="2"/>
+              <circle cx="128" cy="78" r="1.5"/><circle cx="155" cy="68" r="2"/><circle cx="98" cy="67" r="1.5"/>
+              <circle cx="135" cy="48" r="2"/><circle cx="150" cy="80" r="1.5"/>
+            </g>
+            <g fill="#c084fc" opacity="0.7">
+              <circle cx="228" cy="45" r="2"/><circle cx="248" cy="38" r="1.5"/><circle cx="262" cy="52" r="2"/>
+              <circle cx="238" cy="60" r="1.5"/><circle cx="255" cy="65" r="2"/><circle cx="272" cy="44" r="1.5"/>
+            </g>
+            <g fill="#4ade80" opacity="0.7">
+              <circle cx="318" cy="70" r="2"/><circle cx="335" cy="58" r="1.5"/><circle cx="352" cy="78" r="2"/>
+              <circle cx="362" cy="65" r="1.5"/><circle cx="328" cy="85" r="2"/><circle cx="348" cy="52" r="1.5"/>
+              <circle cx="370" cy="80" r="2"/>
+            </g>
+            <g fill="#fbbf24" opacity="0.7">
+              <circle cx="418" cy="50" r="2"/><circle cx="438" cy="42" r="1.5"/><circle cx="455" cy="60" r="2"/>
+              <circle cx="428" cy="68" r="1.5"/><circle cx="462" cy="48" r="2"/><circle cx="445" cy="72" r="1.5"/>
+            </g>
+            <g fill="#f87171" opacity="0.7">
+              <circle cx="495" cy="75" r="2"/><circle cx="512" cy="68" r="1.5"/><circle cx="525" cy="85" r="2"/>
+              <circle cx="505" cy="88" r="1.5"/><circle cx="520" cy="75" r="2"/>
+            </g>
+
+            <!-- Cluster labels -->
+            <text x="118" y="100" font-family="JetBrains Mono,monospace" font-size="8" fill="#60a5fa" text-anchor="middle">Strategy</text>
+            <text x="245" y="26" font-family="JetBrains Mono,monospace" font-size="8" fill="#c084fc" text-anchor="middle">Roguelike</text>
+            <text x="340" y="112" font-family="JetBrains Mono,monospace" font-size="8" fill="#4ade80" text-anchor="middle">Platformer</text>
+            <text x="440" y="24" font-family="JetBrains Mono,monospace" font-size="8" fill="#fbbf24" text-anchor="middle">Survival</text>
+            <text x="510" y="108" font-family="JetBrains Mono,monospace" font-size="8" fill="#f87171" text-anchor="middle">Abstract</text>
+          </svg>
+        </div>        <div class="project-top">
           <div class="project-icon">👾</div>
           <div class="project-links">
             <a href="https://github.com/rwolfe26/Portfolio/tree/main/horror" target="_blank">
@@ -1014,7 +1163,53 @@
       </div>
 
       <div class="project-card" style="border-top: 3px solid #22c55e;">
-        <div class="project-top">
+        <div class="project-visual" style="margin-bottom:1rem;">
+          <svg viewBox="0 0 580 100" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
+            <defs>
+              <pattern id="grid4" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
+              </pattern>
+            </defs>
+            <rect width="580" height="100" fill="url(#grid4)"/>
+            <!-- Ground -->
+            <rect x="0" y="72" width="580" height="28" fill="#0f1520"/>
+            <rect x="0" y="70" width="580" height="4" fill="#22c55e" opacity="0.6"/>
+            <!-- Crops at various growth stages -->
+            <!-- Stage 1: seedling -->
+            <rect x="48" y="60" width="4" height="10" fill="#22c55e" rx="1"/>
+            <ellipse cx="50" cy="58" rx="5" ry="4" fill="#22c55e" opacity="0.7"/>
+            <!-- Stage 2: mid -->
+            <rect x="108" y="50" width="4" height="20" fill="#22c55e" rx="1"/>
+            <ellipse cx="110" cy="46" rx="8" ry="6" fill="#22c55e" opacity="0.8"/>
+            <ellipse cx="104" cy="52" rx="5" ry="4" fill="#22c55e" opacity="0.6"/>
+            <!-- Stage 3: full grown -->
+            <rect x="168" y="38" width="6" height="32" fill="#16a34a" rx="1"/>
+            <ellipse cx="171" cy="32" rx="14" ry="10" fill="#22c55e"/>
+            <ellipse cx="160" cy="40" rx="8" ry="6" fill="#22c55e" opacity="0.7"/>
+            <ellipse cx="182" cy="40" rx="8" ry="6" fill="#22c55e" opacity="0.7"/>
+            <circle cx="171" cy="28" r="4" fill="#f59e0b"/>
+            <!-- Stage 4: harvest ready -->
+            <rect x="238" y="35" width="6" height="35" fill="#16a34a" rx="1"/>
+            <ellipse cx="241" cy="28" rx="16" ry="12" fill="#22c55e"/>
+            <circle cx="241" cy="22" r="6" fill="#f59e0b"/>
+            <circle cx="235" cy="26" r="3" fill="#fbbf24"/>
+            <circle cx="248" cy="26" r="3" fill="#fbbf24"/>
+            <!-- NPC character -->
+            <rect x="320" y="52" width="12" height="18" rx="2" fill="#60a5fa"/>
+            <circle cx="326" cy="48" r="7" fill="#fbbf24"/>
+            <text x="326" y="52" font-family="monospace" font-size="8" fill="#0a0e17" text-anchor="middle">^</text>
+            <!-- Speech bubble -->
+            <rect x="335" y="36" width="75" height="22" rx="4" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+            <polygon points="335,50 340,44 340,56" fill="#1e3a5f"/>
+            <text x="373" y="48" font-family="JetBrains Mono,monospace" font-size="7" fill="#60a5fa" text-anchor="middle">harvest ready!</text>
+            <!-- Season indicator -->
+            <rect x="460" y="20" width="100" height="50" rx="4" fill="#0f1520" stroke="#1e2d45" stroke-width="1"/>
+            <text x="510" y="36" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" text-anchor="middle">🌱 SPRING</text>
+            <text x="510" y="50" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">day 14 / 28</text>
+            <rect x="468" y="56" width="84" height="5" rx="2" fill="#1e2d45"/>
+            <rect x="468" y="56" width="42" height="5" rx="2" fill="#22c55e" opacity="0.7"/>
+          </svg>
+        </div>        <div class="project-top">
           <div class="project-icon">🌾</div>
           <div class="project-links">
             <a href="https://github.com/rwolfe26" target="_blank">
