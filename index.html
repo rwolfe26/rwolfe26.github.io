@@ -1000,6 +1000,82 @@
         <div class="section-line"></div>
       </div>
 
+      <!-- PHISHING DETECTOR -->
+      <div class="project-card" style="border-top: 3px solid #ef4444;">
+        <div class="project-visual" style="margin-bottom:1rem;">
+          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
+            <defs>
+              <pattern id="gridP" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
+              </pattern>
+              <marker id="arrP" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L6,3 z" fill="#ef4444"/>
+              </marker>
+            </defs>
+            <rect width="580" height="120" fill="url(#gridP)"/>
+            <!-- Title -->
+            <text x="16" y="16" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b" font-weight="600">PHISHING DETECTION PIPELINE — 17,204 EMAILS TRAINED</text>
+            <!-- Email box -->
+            <rect x="12" y="26" width="88" height="56" rx="4" fill="#0f1520" stroke="#ef4444" stroke-width="1.5"/>
+            <text x="56" y="46" font-family="JetBrains Mono,monospace" font-size="8" fill="#f87171" text-anchor="middle" font-weight="600">RAW EMAIL</text>
+            <text x="56" y="58" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">headers + body</text>
+            <text x="56" y="70" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">+ URLs + HTML</text>
+            <line x1="100" y1="54" x2="126" y2="54" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrP)"/>
+            <!-- Feature extraction -->
+            <rect x="128" y="26" width="108" height="56" rx="4" fill="#0f1520" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="182" y="43" font-family="JetBrains Mono,monospace" font-size="8" fill="#fbbf24" text-anchor="middle" font-weight="600">47 FEATURES</text>
+            <text x="182" y="55" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">URL · header · HTML</text>
+            <text x="182" y="66" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">+ 128-dim LSA</text>
+            <text x="182" y="77" font-family="JetBrains Mono,monospace" font-size="7" fill="#475569" text-anchor="middle">= 175 total</text>
+            <line x1="236" y1="54" x2="262" y2="54" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrP)"/>
+            <!-- Random Forest -->
+            <rect x="264" y="26" width="108" height="56" rx="4" fill="#0f1520" stroke="#3b82f6" stroke-width="1.5"/>
+            <text x="318" y="43" font-family="JetBrains Mono,monospace" font-size="8" fill="#60a5fa" text-anchor="middle" font-weight="600">RANDOM FOREST</text>
+            <text x="318" y="55" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">200 trees</text>
+            <text x="318" y="66" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">class_weight=balanced</text>
+            <text x="318" y="77" font-family="JetBrains Mono,monospace" font-size="7" fill="#475569" text-anchor="middle">+ SHAP explain</text>
+            <line x1="372" y1="54" x2="398" y2="54" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrP)"/>
+            <!-- Metrics -->
+            <rect x="400" y="26" width="168" height="56" rx="4" fill="#0f1520" stroke="#22c55e" stroke-width="1.5"/>
+            <text x="484" y="40" font-family="JetBrains Mono,monospace" font-size="8" fill="#4ade80" text-anchor="middle" font-weight="600">RESULTS</text>
+            <text x="418" y="54" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" font-weight="700">98.6%</text>
+            <text x="418" y="64" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b">accuracy</text>
+            <text x="490" y="54" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" font-weight="700">99.9%</text>
+            <text x="490" y="64" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b">AUC-ROC</text>
+            <text x="549" y="54" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" font-weight="700">1.0%</text>
+            <text x="549" y="64" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b">FPR</text>
+            <!-- Animated dot -->
+            <circle r="3" fill="#ef4444" opacity="0.9">
+              <animateMotion dur="2.5s" repeatCount="indefinite" path="M100,54 L400,54"/>
+              <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <!-- Bottom label -->
+            <text x="290" y="112" font-family="JetBrains Mono,monospace" font-size="8" fill="#1e3a5f" text-anchor="middle">LIVE DEMO · FastAPI + Docker + HF Spaces · CI/CD via GitHub Actions</text>
+          </svg>
+        </div>
+        <div class="project-top">
+          <div class="project-icon">🎣</div>
+          <div class="project-links">
+            <a href="https://rwolfe26-phishing-detector.hf.space" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/rwolfe26/PhishingDetectionSystem" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Email Phishing Detection System</div>
+        <div class="project-desc">Production ML system that classifies emails as phishing or legitimate in real time with <strong style="color:var(--text)">98.6% accuracy</strong> and <strong style="color:var(--text)">99.9% AUC-ROC</strong> across 17,204 training emails. Built end-to-end: a 175-feature pipeline (47 handcrafted signals covering URL analysis, header forensics, HTML structure, and NLP ratios — combined with 128-dim LSA semantic embeddings) feeding a Random Forest with SHAP explainability.</div>
+        <div class="project-desc" style="margin-top:0.5rem;">Full production stack — FastAPI REST API, dark-mode web UI, real-time IMAP inbox monitor, SQLite-backed monitoring dashboard, and user feedback loop for active retraining. Containerized with Docker, CI/CD via GitHub Actions, deployed live on Hugging Face Spaces.</div>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">FastAPI</span>
+          <span class="tag">SHAP</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span>
+          <span class="tag">HF Spaces</span><span class="tag">SQLite</span><span class="tag">NLP</span>
+        </div>
+      </div>
+
       <div class="project-card" style="border-top: 3px solid var(--accent);">
         <div class="project-visual" style="margin-bottom:1rem;">
           <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
