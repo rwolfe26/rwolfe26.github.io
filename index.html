@@ -319,8 +319,16 @@
       margin-bottom: 1rem;
     }
     .about-text strong { color: var(--accent2); }
-    .about-text a { color: var(--accent2); text-decoration: none; }
-    .about-text a:hover { text-decoration: underline; }
+    .about-text a:any-link {
+      color: #93c5fd;
+      text-decoration: underline;
+      text-decoration-color: rgba(147, 197, 253, 0.55);
+      text-underline-offset: 0.18em;
+    }
+    .about-text a:hover {
+      color: #bfdbfe;
+      text-decoration-color: currentColor;
+    }
 
     /* ── EXPERIENCE ── */
     .exp-item {
