@@ -380,6 +380,14 @@
       margin-bottom: 0.75rem;
     }
 
+    .exp-company a:any-link {
+      color: #93c5fd;
+      text-decoration-color: rgba(147, 197, 253, 0.65);
+      text-underline-offset: 0.18em;
+    }
+    .exp-company a:hover { color: #bfdbfe; }
+    .exp-company a:focus-visible { outline: 2px solid #93c5fd; outline-offset: 4px; }
+
     .exp-desc {
       font-size: 13px;
       color: var(--muted2);
@@ -844,20 +852,20 @@
       <!-- STAT COUNTERS -->
       <div class="stat-row">
         <div class="stat-box">
-          <div class="stat-num" data-target="333" data-suffix="+">0</div>
-          <div class="stat-label">articles/week at Butter AI</div>
+          <div class="stat-num">Web</div>
+          <div class="stat-label">Energy and construction apps</div>
         </div>
         <div class="stat-box">
-          <div class="stat-num" data-target="15" data-suffix="hrs">0</div>
-          <div class="stat-label">saved weekly at Butter AI</div>
+          <div class="stat-num">MCP</div>
+          <div class="stat-label">Counterpoint and Microsoft 365</div>
         </div>
         <div class="stat-box">
-          <div class="stat-num" data-target="0" data-suffix="" data-text="4">0</div>
-          <div class="stat-label">stages in the Butter AI pipeline</div>
+          <div class="stat-num">Reports</div>
+          <div class="stat-label">Analytics and billing automation</div>
         </div>
         <div class="stat-box">
-          <div class="stat-num" data-target="0" data-suffix="" data-text="100%">0</div>
-          <div class="stat-label">of Butter AI content flow automated</div>
+          <div class="stat-num">Go</div>
+          <div class="stat-label">Native Windows discovery</div>
         </div>
       </div>
 
@@ -944,62 +952,14 @@
           <div class="exp-desc">Engineered a 4-stage ETL pipeline in n8n that ingests ~333 articles/week across 12 RSS feeds, routes content through an LLM relevance filter, and scrapes approved sources — reducing manual research overhead to near-zero.</div>
           <div class="exp-desc">Built agentic logic that uses AI to score and rank articles by priority, cutting unnecessary Firecrawl and OpenAI costs by filtering low-signal content early. Integrated Firecrawl and OpenAI APIs for structured full-text extraction from industry web sources, producing clean content summaries ready for marketing use.</div>
           <div class="exp-desc">Replaced a fully manual content workflow — research, writing, image generation, and publishing — with an end-to-end automated pipeline, freeing the team entirely from recurring content production.</div>
-          <div style="margin:0.75rem 0;">
-          <svg viewBox="0 0 580 110" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
-            <defs>
-              <pattern id="bgrid" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
-              </pattern>
-              <marker id="barr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L6,3 z" fill="#3b82f6"/>
-              </marker>
-            </defs>
-            <rect width="580" height="110" fill="url(#bgrid)"/>
-            <rect x="12" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#3b82f6" stroke-width="1.5"/>
-            <text x="66" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="600">12 RSS FEEDS</text>
-            <text x="66" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">~333 articles/week</text>
-            <text x="66" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">harvested</text>
-            <line x1="120" y1="55" x2="148" y2="55" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#barr)"/>
-            <rect x="150" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#22c55e" stroke-width="1.5"/>
-            <text x="204" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#22c55e" text-anchor="middle" font-weight="600">LLM FILTER</text>
-            <text x="204" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">GPT-4.1-mini</text>
-            <text x="204" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">scores relevance</text>
-            <line x1="258" y1="55" x2="286" y2="55" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#barr)"/>
-            <rect x="288" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#f59e0b" stroke-width="1.5"/>
-            <text x="342" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#f59e0b" text-anchor="middle" font-weight="600">SCRAPE + WRITE</text>
-            <text x="342" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">Firecrawl + OpenAI</text>
-            <text x="342" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">full extraction</text>
-            <line x1="396" y1="55" x2="424" y2="55" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#barr)"/>
-            <rect x="426" y="28" width="108" height="54" rx="4" fill="#0f1520" stroke="#a855f7" stroke-width="1.5"/>
-            <text x="480" y="48" font-family="JetBrains Mono,monospace" font-size="9" fill="#a855f7" text-anchor="middle" font-weight="600">AUTO-PUBLISH</text>
-            <text x="480" y="62" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">LinkedIn post +</text>
-            <text x="480" y="74" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">image generated</text>
-            <text x="290" y="100" font-family="JetBrains Mono,monospace" font-size="8" fill="#1e3a5f" text-anchor="middle">BUTTER LANE — 2x weekly · 15hrs eliminated · 0 human touchpoints</text>
-            <circle r="3" fill="#3b82f6" opacity="0.9">
-              <animateMotion dur="3s" repeatCount="indefinite" path="M120,55 L424,55"/>
-              <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3s" repeatCount="indefinite"/>
-            </circle>
-          </svg>
-          </div>          <div class="tags">
+                    <div class="tags">
             <span class="tag">n8n</span><span class="tag">ETL Pipelines</span><span class="tag">GPT-4.1-mini</span>
             <span class="tag">Firecrawl</span><span class="tag">OpenAI API</span><span class="tag">Agentic Logic</span>
           </div>
         </div>
       </div>
 
-      <div class="exp-item">
-        <div class="exp-date">Sep 2025<br>Jun 2026</div>
-        <div>
-          <div class="exp-role">Systems Administrator Assistant</div>
-          <div class="exp-company">Skidmore College</div>
-          <div class="exp-desc">Installed and configured Ubuntu Server on a Dell Precision 5820 workstation with a RAID 1 storage array, preparing the system for virtualization hosting using KVM/QEMU/libvirt.</div>
-          <div class="exp-desc">Designed and implemented a Multi-Factor Authentication (MFA) system integrating password and verification token layers to secure Linux user logins. Managing network bridges, user/group permissions, and shared resource access across Linux and Windows VMs.</div>
-          <div class="tags">
-            <span class="tag">Ubuntu Server</span><span class="tag">KVM/QEMU</span><span class="tag">RAID 1</span>
-            <span class="tag">MFA Design</span><span class="tag">Linux Admin</span><span class="tag">Virtualization</span>
-          </div>
-        </div>
-      </div>
+
 
       <div class="exp-item">
         <div class="exp-date">Summer 2025</div>
@@ -1015,19 +975,7 @@
         </div>
       </div>
 
-      <div class="exp-item">
-        <div class="exp-date">Sep 2024<br>Jun 2026</div>
-        <div>
-          <div class="exp-role">Cybersecurity Researcher</div>
-          <div class="exp-company">Skidmore College</div>
-          <div class="exp-desc">Conducted in-depth research into phishing detection models — analyzing deceptive techniques, evolving attacker strategies, and system vulnerabilities — resulting in a 15% measurable improvement in phishing threat identification and mitigation.</div>
-          <div class="exp-desc">Designed and implemented a custom phishing detection system, translating research findings into a working tool evaluated against real-world threat scenarios.</div>
-          <div class="tags">
-            <span class="tag">Phishing Detection</span><span class="tag">OSINT</span>
-            <span class="tag">Threat Analysis</span><span class="tag">Python</span>
-          </div>
-        </div>
-      </div>
+
 
     </section>
 
@@ -1073,57 +1021,7 @@
 
       <!-- PHISHING DETECTOR -->
       <div class="project-card" style="border-top: 3px solid #ef4444;">
-        <div class="project-visual" style="margin-bottom:1rem;">
-          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
-            <defs>
-              <pattern id="gridP" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
-              </pattern>
-              <marker id="arrP" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L6,3 z" fill="#ef4444"/>
-              </marker>
-            </defs>
-            <rect width="580" height="120" fill="url(#gridP)"/>
-            <!-- Title -->
-            <text x="16" y="16" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b" font-weight="600">PHISHING DETECTION PIPELINE — 17,204 EMAILS TRAINED</text>
-            <!-- Email box -->
-            <rect x="12" y="26" width="88" height="56" rx="4" fill="#0f1520" stroke="#ef4444" stroke-width="1.5"/>
-            <text x="56" y="46" font-family="JetBrains Mono,monospace" font-size="8" fill="#f87171" text-anchor="middle" font-weight="600">RAW EMAIL</text>
-            <text x="56" y="58" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">headers + body</text>
-            <text x="56" y="70" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">+ URLs + HTML</text>
-            <line x1="100" y1="54" x2="126" y2="54" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrP)"/>
-            <!-- Feature extraction -->
-            <rect x="128" y="26" width="108" height="56" rx="4" fill="#0f1520" stroke="#f59e0b" stroke-width="1.5"/>
-            <text x="182" y="43" font-family="JetBrains Mono,monospace" font-size="8" fill="#fbbf24" text-anchor="middle" font-weight="600">47 FEATURES</text>
-            <text x="182" y="55" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">URL · header · HTML</text>
-            <text x="182" y="66" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">+ 128-dim LSA</text>
-            <text x="182" y="77" font-family="JetBrains Mono,monospace" font-size="7" fill="#475569" text-anchor="middle">= 175 total</text>
-            <line x1="236" y1="54" x2="262" y2="54" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrP)"/>
-            <!-- Random Forest -->
-            <rect x="264" y="26" width="108" height="56" rx="4" fill="#0f1520" stroke="#3b82f6" stroke-width="1.5"/>
-            <text x="318" y="43" font-family="JetBrains Mono,monospace" font-size="8" fill="#60a5fa" text-anchor="middle" font-weight="600">RANDOM FOREST</text>
-            <text x="318" y="55" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">200 trees</text>
-            <text x="318" y="66" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">class_weight=balanced</text>
-            <text x="318" y="77" font-family="JetBrains Mono,monospace" font-size="7" fill="#475569" text-anchor="middle">+ SHAP explain</text>
-            <line x1="372" y1="54" x2="398" y2="54" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrP)"/>
-            <!-- Metrics -->
-            <rect x="400" y="26" width="168" height="56" rx="4" fill="#0f1520" stroke="#22c55e" stroke-width="1.5"/>
-            <text x="484" y="40" font-family="JetBrains Mono,monospace" font-size="8" fill="#4ade80" text-anchor="middle" font-weight="600">RESULTS</text>
-            <text x="418" y="54" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" font-weight="700">98.6%</text>
-            <text x="418" y="64" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b">accuracy</text>
-            <text x="490" y="54" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" font-weight="700">99.9%</text>
-            <text x="490" y="64" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b">AUC-ROC</text>
-            <text x="549" y="54" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" font-weight="700">1.0%</text>
-            <text x="549" y="64" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b">FPR</text>
-            <!-- Animated dot -->
-            <circle r="3" fill="#ef4444" opacity="0.9">
-              <animateMotion dur="2.5s" repeatCount="indefinite" path="M100,54 L400,54"/>
-              <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.5s" repeatCount="indefinite"/>
-            </circle>
-            <!-- Bottom label -->
-            <text x="290" y="112" font-family="JetBrains Mono,monospace" font-size="8" fill="#1e3a5f" text-anchor="middle">LIVE DEMO · FastAPI + Docker + HF Spaces · CI/CD via GitHub Actions</text>
-          </svg>
-        </div>
+
         <div class="project-top">
           <div class="project-icon">🎣</div>
           <div class="project-links">
@@ -1153,95 +1051,25 @@
       </div>
 
       <div class="project-card" style="border-top: 3px solid #f59e0b;">
-        <div class="project-visual" style="margin-bottom:1rem;">
-          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
-            <defs>
-              <pattern id="gridMCP" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
-              </pattern>
-              <marker id="arrMCP" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L6,3 z" fill="#f59e0b"/>
-              </marker>
-            </defs>
-            <rect width="580" height="120" fill="url(#gridMCP)"/>
-            <text x="16" y="16" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b" font-weight="600">MCP ARCHITECTURE: RETAIL BUSINESS INTELLIGENCE</text>
-            <!-- Business Systems -->
-            <rect x="12" y="28" width="100" height="72" rx="4" fill="#0f1520" stroke="#64748b" stroke-width="1"/>
-            <text x="62" y="44" font-family="JetBrains Mono,monospace" font-size="7" fill="#94a3b8" text-anchor="middle" font-weight="600">BUSINESS DATA</text>
-            <text x="62" y="58" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">Counterpoint POS</text>
-            <text x="62" y="69" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">Focus POS</text>
-            <text x="62" y="80" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">Outlook 365</text>
-            <text x="62" y="91" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">SQL Server</text>
-            <line x1="112" y1="64" x2="138" y2="64" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrMCP)"/>
-            <!-- MCP Servers -->
-            <rect x="140" y="28" width="130" height="72" rx="4" fill="#0f1520" stroke="#f59e0b" stroke-width="1.5"/>
-            <text x="205" y="44" font-family="JetBrains Mono,monospace" font-size="8" fill="#fbbf24" text-anchor="middle" font-weight="600">MCP SERVERS</text>
-            <text x="205" y="58" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">CP Read: reporting</text>
-            <text x="205" y="69" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">CP Write — gated</text>
-            <text x="205" y="80" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">Outlook — OAuth 2.0</text>
-            <text x="205" y="91" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">Focus — REST API</text>
-            <line x1="270" y1="64" x2="296" y2="64" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrMCP)"/>
-            <!-- Claude AI -->
-            <rect x="298" y="34" width="110" height="60" rx="4" fill="#0f1520" stroke="#a855f7" stroke-width="1.5"/>
-            <text x="353" y="52" font-family="JetBrains Mono,monospace" font-size="8" fill="#c084fc" text-anchor="middle" font-weight="600">CLAUDE AI</text>
-            <text x="353" y="66" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">natural language</text>
-            <text x="353" y="77" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">query engine</text>
-            <line x1="408" y1="64" x2="434" y2="64" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrMCP)"/>
-            <!-- Owner -->
-            <rect x="436" y="34" width="130" height="60" rx="4" fill="#0f1520" stroke="#22c55e" stroke-width="1.5"/>
-            <text x="501" y="50" font-family="JetBrains Mono,monospace" font-size="8" fill="#4ade80" text-anchor="middle" font-weight="600">BUSINESS OWNER</text>
-            <text x="501" y="64" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">"What sold best</text>
-            <text x="501" y="75" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">last week?"</text>
-            <!-- Animated dot -->
-            <circle r="3" fill="#f59e0b" opacity="0.9">
-              <animateMotion dur="3s" repeatCount="indefinite" path="M112,64 L436,64"/>
-              <animate attributeName="opacity" values="0.9;0.3;0.9" dur="3s" repeatCount="indefinite"/>
-            </circle>
-            <text x="290" y="115" font-family="JetBrains Mono,monospace" font-size="8" fill="#1e3a5f" text-anchor="middle">FREELANCE · TypeScript · Node.js · Express · SQL Server · Railway · MCP Protocol</text>
-          </svg>
-        </div>
+
         <div class="project-top">
           <div class="project-icon">🏪</div>
           <div class="project-links">
           </div>
         </div>
-        <div class="project-name">Retail and Microsoft 365 Integrations</div>
-        <div class="project-desc">Built and deployed MCP services that connect AI assistants to retail sales, inventory, and Microsoft 365 data, allowing managers to ask operational questions in plain language.</div>
-        <div class="project-desc" style="margin-top:0.5rem;"><strong style="color:var(--text)">Microsoft 365:</strong> Graph API integration with OAuth login and token refresh, hosted on Railway. <strong style="color:var(--text)">Retail reporting:</strong> SQL-backed inventory, sales, vendor, and receivables queries. <strong style="color:var(--text)">Controlled updates:</strong> confirmation-gated inventory changes, validation, and audit trails. <strong style="color:var(--text)">Invoice receiving:</strong> document extraction and item-matching workflows tested in a practice environment. A separate restaurant POS connector has fixture-tested tools, with live validation still pending.</div>
+        <div class="project-name">Counterpoint Integrations</div>
+        <div class="project-desc">Built and deployed MCP services connecting AI assistants to NCR Counterpoint sales and inventory data, allowing managers to ask operational questions in plain language.</div>
+        <div class="project-desc" style="margin-top:0.5rem;"><strong style="color:var(--text)">Reporting:</strong> SQL-backed inventory, sales, vendor, and receivables queries. <strong style="color:var(--text)">Controlled updates:</strong> confirmation-gated inventory changes with validation and audit trails. <strong style="color:var(--text)">Invoice receiving:</strong> document extraction and item-matching workflows tested in a practice environment.</div>
         <div class="tags">
           <span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Express</span>
-          <span class="tag">Microsoft Graph API</span><span class="tag">SQL Server</span><span class="tag">NCR Counterpoint</span>
-          <span class="tag">OAuth 2.0</span><span class="tag">Railway</span><span class="tag">Claude AI</span>
+          <span class="tag">SQL Server</span><span class="tag">NCR Counterpoint</span>
+          <span class="tag">Railway</span><span class="tag">Claude AI</span>
           <span class="tag">MCP Protocol</span>
         </div>
       </div>
 
       <div class="project-card" style="border-top: 3px solid #22c55e;">
-        <div class="project-visual" style="margin-bottom:1rem;">
-          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
-            <defs>
-              <pattern id="gridVU" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="580" height="120" fill="url(#gridVU)"/>
-            <text x="16" y="16" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b" font-weight="600">FREELANCE WEB DEVELOPMENT — ROLEMADE</text>
-            <!-- Browser frame -->
-            <rect x="90" y="26" width="400" height="84" rx="6" fill="#0f1520" stroke="#f59e0b" stroke-width="1.5"/>
-            <rect x="90" y="26" width="400" height="18" rx="6" fill="#1a2332"/>
-            <rect x="90" y="38" width="400" height="6" fill="#1a2332"/>
-            <circle cx="104" cy="35" r="3.5" fill="#ef4444" opacity="0.8"/>
-            <circle cx="115" cy="35" r="3.5" fill="#f59e0b" opacity="0.8"/>
-            <circle cx="126" cy="35" r="3.5" fill="#22c55e" opacity="0.8"/>
-            <rect x="170" y="31" width="200" height="10" rx="3" fill="#0f1520" stroke="#334155" stroke-width="0.5"/>
-            <text x="270" y="39" font-family="JetBrains Mono,monospace" font-size="6" fill="#64748b" text-anchor="middle">rolemade.com</text>
-            <!-- Page content mockup -->
-            <text x="290" y="64" font-family="JetBrains Mono,monospace" font-size="11" fill="#f59e0b" text-anchor="middle" font-weight="700">RoleMade</text>
-            <text x="290" y="80" font-family="JetBrains Mono,monospace" font-size="8" fill="#94a3b8" text-anchor="middle">Diagnosis first · Tools second</text>
-            <rect x="240" y="88" width="100" height="14" rx="3" fill="#f59e0b" opacity="0.15" stroke="#f59e0b" stroke-width="0.5"/>
-            <text x="290" y="98" font-family="JetBrains Mono,monospace" font-size="7" fill="#f59e0b" text-anchor="middle">Book a Call</text>
-          </svg>
-        </div>
+
         <div class="project-top">
           <div class="project-icon">🚀</div>
           <div class="project-links">
@@ -1259,50 +1087,7 @@
       </div>
 
       <div class="project-card" style="border-top: 3px solid var(--accent);">
-        <div class="project-visual" style="margin-bottom:1rem;">
-          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
-            <defs>
-              <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="580" height="120" fill="url(#grid2)"/>
-
-            <!-- Title -->
-            <text x="16" y="22" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b" font-weight="600">MODEL ACCURACY COMPARISON</text>
-
-            <!-- Baseline reference line -->
-            <line x1="16" y1="90" x2="564" y2="90" stroke="#1e2d45" stroke-width="1" stroke-dasharray="4,4"/>
-            <text x="16" y="88" font-family="JetBrains Mono,monospace" font-size="7" fill="#475569">66% baseline</text>
-
-            <!-- Bar 1: FFNN -->
-            <rect x="60" y="57" width="80" height="33" rx="2" fill="#3b82f6" opacity="0.85"/>
-            <rect x="60" y="57" width="80" height="2" rx="1" fill="#60a5fa"/>
-            <text x="100" y="52" font-family="JetBrains Mono,monospace" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">67.77%</text>
-            <text x="100" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">FFNN v1</text>
-
-            <!-- Bar 2: Logistic Regression -->
-            <rect x="180" y="55" width="80" height="35" rx="2" fill="#3b82f6" opacity="0.85"/>
-            <rect x="180" y="55" width="80" height="2" rx="1" fill="#60a5fa"/>
-            <text x="220" y="50" font-family="JetBrains Mono,monospace" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">67.98%</text>
-            <text x="220" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">Log. Regression</text>
-
-            <!-- Bar 3: RNN -->
-            <rect x="300" y="44" width="80" height="46" rx="2" fill="#22c55e" opacity="0.85"/>
-            <rect x="300" y="44" width="80" height="2" rx="1" fill="#4ade80"/>
-            <text x="340" y="39" font-family="JetBrains Mono,monospace" font-size="9" fill="#4ade80" text-anchor="middle" font-weight="700">75.57%</text>
-            <text x="340" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">Celtics RNN ★</text>
-
-            <!-- Bar 4: avg per chunk -->
-            <rect x="420" y="35" width="80" height="55" rx="2" fill="#f59e0b" opacity="0.85"/>
-            <rect x="420" y="35" width="80" height="2" rx="1" fill="#fbbf24"/>
-            <text x="460" y="30" font-family="JetBrains Mono,monospace" font-size="9" fill="#fbbf24" text-anchor="middle" font-weight="700">7.0 / 10</text>
-            <text x="460" y="107" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b" text-anchor="middle">avg correct/chunk</text>
-
-            <!-- Baseline bar overlay -->
-            <rect x="60" y="88" width="440" height="2" rx="1" fill="#475569" opacity="0.5"/>
-          </svg>
-        </div>        <div class="project-top">
+                <div class="project-top">
           <div class="project-icon">🏀</div>
           <div class="project-links">
             <a href="https://medium.com/@jjhertz/predicting-nba-game-outcomes-bd5efddb6894" target="_blank" rel="noopener noreferrer">
@@ -1333,77 +1118,7 @@
       </div>
 
       <div class="project-card" style="border-top: 3px solid #a855f7;">
-        <div class="project-visual" style="margin-bottom:1rem;">
-          <svg viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
-            <defs>
-              <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
-              </pattern>
-              <radialGradient id="c1" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="c2" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="c3" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#22c55e" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="c4" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="c5" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#ef4444" stop-opacity="0.5"/>
-                <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-            <rect width="580" height="120" fill="url(#grid3)"/>
-
-            <!-- Title -->
-            <text x="16" y="18" font-family="JetBrains Mono,monospace" font-size="9" fill="#64748b">K-MEANS CLUSTER MAP — 4,600+ STEAM HORROR GAMES</text>
-
-            <!-- Cluster blobs (t-SNE style) -->
-            <ellipse cx="130" cy="65" rx="55" ry="35" fill="url(#c1)" opacity="0.9"/>
-            <ellipse cx="245" cy="50" rx="45" ry="28" fill="url(#c2)" opacity="0.9"/>
-            <ellipse cx="340" cy="75" rx="50" ry="30" fill="url(#c3)" opacity="0.9"/>
-            <ellipse cx="440" cy="55" rx="40" ry="32" fill="url(#c4)" opacity="0.9"/>
-            <ellipse cx="510" cy="80" rx="35" ry="22" fill="url(#c5)" opacity="0.8"/>
-
-            <!-- Scatter dots per cluster -->
-            <g fill="#60a5fa" opacity="0.7">
-              <circle cx="105" cy="58" r="2"/><circle cx="118" cy="72" r="1.5"/><circle cx="142" cy="55" r="2"/>
-              <circle cx="128" cy="78" r="1.5"/><circle cx="155" cy="68" r="2"/><circle cx="98" cy="67" r="1.5"/>
-              <circle cx="135" cy="48" r="2"/><circle cx="150" cy="80" r="1.5"/>
-            </g>
-            <g fill="#c084fc" opacity="0.7">
-              <circle cx="228" cy="45" r="2"/><circle cx="248" cy="38" r="1.5"/><circle cx="262" cy="52" r="2"/>
-              <circle cx="238" cy="60" r="1.5"/><circle cx="255" cy="65" r="2"/><circle cx="272" cy="44" r="1.5"/>
-            </g>
-            <g fill="#4ade80" opacity="0.7">
-              <circle cx="318" cy="70" r="2"/><circle cx="335" cy="58" r="1.5"/><circle cx="352" cy="78" r="2"/>
-              <circle cx="362" cy="65" r="1.5"/><circle cx="328" cy="85" r="2"/><circle cx="348" cy="52" r="1.5"/>
-              <circle cx="370" cy="80" r="2"/>
-            </g>
-            <g fill="#fbbf24" opacity="0.7">
-              <circle cx="418" cy="50" r="2"/><circle cx="438" cy="42" r="1.5"/><circle cx="455" cy="60" r="2"/>
-              <circle cx="428" cy="68" r="1.5"/><circle cx="462" cy="48" r="2"/><circle cx="445" cy="72" r="1.5"/>
-            </g>
-            <g fill="#f87171" opacity="0.7">
-              <circle cx="495" cy="75" r="2"/><circle cx="512" cy="68" r="1.5"/><circle cx="525" cy="85" r="2"/>
-              <circle cx="505" cy="88" r="1.5"/><circle cx="520" cy="75" r="2"/>
-            </g>
-
-            <!-- Cluster labels -->
-            <text x="118" y="100" font-family="JetBrains Mono,monospace" font-size="8" fill="#60a5fa" text-anchor="middle">Strategy</text>
-            <text x="245" y="26" font-family="JetBrains Mono,monospace" font-size="8" fill="#c084fc" text-anchor="middle">Roguelike</text>
-            <text x="340" y="112" font-family="JetBrains Mono,monospace" font-size="8" fill="#4ade80" text-anchor="middle">Platformer</text>
-            <text x="440" y="24" font-family="JetBrains Mono,monospace" font-size="8" fill="#fbbf24" text-anchor="middle">Survival</text>
-            <text x="510" y="108" font-family="JetBrains Mono,monospace" font-size="8" fill="#f87171" text-anchor="middle">Abstract</text>
-          </svg>
-        </div>        <div class="project-top">
+                <div class="project-top">
           <div class="project-icon">👾</div>
           <div class="project-links">
             <a href="https://github.com/rwolfe26/Portfolio/tree/main/horror" target="_blank">
@@ -1420,68 +1135,7 @@
         </div>
       </div>
 
-      <div class="project-card" style="border-top: 3px solid #22c55e;">
-        <div class="project-visual" style="margin-bottom:1rem;">
-          <svg viewBox="0 0 580 100" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:6px;background:#0a0e17;">
-            <defs>
-              <pattern id="grid4" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e2d45" stroke-width="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="580" height="100" fill="url(#grid4)"/>
-            <!-- Ground -->
-            <rect x="0" y="72" width="580" height="28" fill="#0f1520"/>
-            <rect x="0" y="70" width="580" height="4" fill="#22c55e" opacity="0.6"/>
-            <!-- Crops at various growth stages -->
-            <!-- Stage 1: seedling -->
-            <rect x="48" y="60" width="4" height="10" fill="#22c55e" rx="1"/>
-            <ellipse cx="50" cy="58" rx="5" ry="4" fill="#22c55e" opacity="0.7"/>
-            <!-- Stage 2: mid -->
-            <rect x="108" y="50" width="4" height="20" fill="#22c55e" rx="1"/>
-            <ellipse cx="110" cy="46" rx="8" ry="6" fill="#22c55e" opacity="0.8"/>
-            <ellipse cx="104" cy="52" rx="5" ry="4" fill="#22c55e" opacity="0.6"/>
-            <!-- Stage 3: full grown -->
-            <rect x="168" y="38" width="6" height="32" fill="#16a34a" rx="1"/>
-            <ellipse cx="171" cy="32" rx="14" ry="10" fill="#22c55e"/>
-            <ellipse cx="160" cy="40" rx="8" ry="6" fill="#22c55e" opacity="0.7"/>
-            <ellipse cx="182" cy="40" rx="8" ry="6" fill="#22c55e" opacity="0.7"/>
-            <circle cx="171" cy="28" r="4" fill="#f59e0b"/>
-            <!-- Stage 4: harvest ready -->
-            <rect x="238" y="35" width="6" height="35" fill="#16a34a" rx="1"/>
-            <ellipse cx="241" cy="28" rx="16" ry="12" fill="#22c55e"/>
-            <circle cx="241" cy="22" r="6" fill="#f59e0b"/>
-            <circle cx="235" cy="26" r="3" fill="#fbbf24"/>
-            <circle cx="248" cy="26" r="3" fill="#fbbf24"/>
-            <!-- NPC character -->
-            <rect x="320" y="52" width="12" height="18" rx="2" fill="#60a5fa"/>
-            <circle cx="326" cy="48" r="7" fill="#fbbf24"/>
-            <text x="326" y="52" font-family="monospace" font-size="8" fill="#0a0e17" text-anchor="middle">^</text>
-            <!-- Speech bubble -->
-            <rect x="335" y="36" width="75" height="22" rx="4" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
-            <polygon points="335,50 340,44 340,56" fill="#1e3a5f"/>
-            <text x="373" y="48" font-family="JetBrains Mono,monospace" font-size="7" fill="#60a5fa" text-anchor="middle">harvest ready!</text>
-            <!-- Season indicator -->
-            <rect x="460" y="20" width="100" height="50" rx="4" fill="#0f1520" stroke="#1e2d45" stroke-width="1"/>
-            <text x="510" y="36" font-family="JetBrains Mono,monospace" font-size="8" fill="#22c55e" text-anchor="middle">🌱 SPRING</text>
-            <text x="510" y="50" font-family="JetBrains Mono,monospace" font-size="7" fill="#64748b" text-anchor="middle">day 14 / 28</text>
-            <rect x="468" y="56" width="84" height="5" rx="2" fill="#1e2d45"/>
-            <rect x="468" y="56" width="42" height="5" rx="2" fill="#22c55e" opacity="0.7"/>
-          </svg>
-        </div>        <div class="project-top">
-          <div class="project-icon">🌾</div>
-          <div class="project-links">
-            <a href="https://github.com/rwolfe26" target="_blank">
-              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-        <div class="project-name">Crubtale</div>
-        <div class="project-desc">Stardew Valley-inspired farming & life-simulation mod for Hytale. Building modular gameplay systems — crop growth with seasonal cycles, inventory management, and event-driven NPC behavior using Hytale's scripting and modding framework.</div>
-        <div class="tags">
-          <span class="tag">Game Dev</span><span class="tag">Hytale SDK</span><span class="tag">State Machines</span><span class="tag">Scripting</span>
-        </div>
-      </div>
+
 
     </section>
 
