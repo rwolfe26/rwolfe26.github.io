@@ -1,13 +1,13 @@
-# Ryan Wolfe — Portfolio
+# Ryan Wolfe Portfolio
 
 Live site: [rwolfe26.github.io](https://rwolfe26.github.io)
 
-Computer Science senior at Skidmore College (May 2026) focused on cybersecurity, DevOps, and software engineering. Currently building automation infrastructure at Butter AI.
+Software Engineer at Stanwich Energy and Co-Founder of Wolfen Consulting Services. Full-stack applications, systems integration, and workflow automation.
 
 ## Built with
 - Vanilla HTML, CSS, JavaScript
 - Hosted on GitHub Pages
-- Contact form via Formspree
+- Contact form with email fallback
 
 ## Contact
-ryanjwolfe8@gmail.com
+rwolfe@wolfenconsulting.com
