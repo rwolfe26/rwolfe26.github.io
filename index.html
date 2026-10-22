@@ -72,7 +72,7 @@
     .sidebar {
       position: sticky;
       top: 0;
-      height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       padding: 4rem 2.5rem;
@@ -80,7 +80,21 @@
       overflow-y: auto;
     }
 
-    .sidebar-top { flex: 1; }
+    .sidebar-top {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-top: auto;
+      text-align: center;
+    }
+    .sidebar .prompt, .sidebar .status { justify-content: center; }
+    .sidebar nav {
+      width: fit-content;
+      min-width: 170px;
+      margin: 0 auto 1.75rem;
+      text-align: left;
+    }
+    .sidebar .nav-line { flex: 0 0 32px; }
+
 
     .prompt {
       color: var(--accent);
@@ -179,7 +193,14 @@
     }
 
     /* SOCIALS */
-    .socials { display: flex; gap: 1rem; }
+    .socials {
+      display: flex;
+      flex: 0 0 auto;
+      justify-content: center;
+      gap: 1.25rem;
+      width: 100%;
+      margin-bottom: auto;
+    }
 
     .social-link {
       color: var(--muted);
