@@ -2,7 +2,7 @@
 
 Live site: [rwolfe26.github.io](https://rwolfe26.github.io)
 
-Software Engineer at Stanwich Energy and Co-Founder of Wolfen Consulting Services. Full-stack applications, systems integration, and workflow automation.
+Software Engineer at Stanwich Energy and Founder of Wolfen Consulting Services. Full-stack applications, systems integration, and workflow automation.
 
 ## Built with
 - Vanilla HTML, CSS, JavaScript
